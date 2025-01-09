@@ -7,5 +7,17 @@ Booking
 
 
 {% block content %}
-This is Booking page
+<h1 class="text-center">Book Your Events</h1>
+<div class="container p-3 text-center">
+    <form action="" class="POST">
+        {% csrf_token %}
+
+    <!--to print the form as paragraph or table(as_table) form is the key of booking form -->    
+    {{form.as_p}}
+    <button class="btn">Book Now</button>
+
+    </form>
+</div>
+    
+
 {% endblock%}
