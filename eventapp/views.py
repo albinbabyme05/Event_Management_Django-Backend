@@ -24,12 +24,8 @@ def booking(request):
     if request.method=='POST':
         form = BookingForm(request.POST)
         if form.is_valid():
-            print("form is valid ..saving...")
             form.save()
-            print("saved.....")
-            return redirect('')
-        else:
-            print(f"form is invalid:  {form.error}")
+            return redirect('/')
     
     form = BookingForm()
     dict_booking = {
