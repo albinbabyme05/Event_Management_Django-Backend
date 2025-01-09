@@ -26,4 +26,4 @@ def booking(request):
         'form' : form
     }
     
-    return render(request, 'booking.html')
+    return render(request, 'booking.html', dict_booking)
