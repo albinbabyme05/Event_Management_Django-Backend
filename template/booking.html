@@ -9,7 +9,7 @@ Booking
 {% block content %}
 <h1 class="text-center">Book Your Events</h1>
 <div class="container p-3 text-center">
-    <form action="" class="POST">
+    <form method="POST" action="" >
         {% csrf_token %}
 
     <!--to print the form as paragraph or table(as_table) form is the key of booking form -->    
