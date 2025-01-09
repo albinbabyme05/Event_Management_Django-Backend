@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Event
 from .forms import BookingForm
 
@@ -21,6 +21,16 @@ def contact(request):
     return render(request, 'contact.html')
 
 def booking(request):
+    if request.method=='POST':
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            print("form is valid ..saving...")
+            form.save()
+            print("saved.....")
+            return redirect('')
+        else:
+            print(f"form is invalid:  {form.error}")
+    
     form = BookingForm()
     dict_booking = {
         'form' : form
