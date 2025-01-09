@@ -5,3 +5,12 @@ class Event(models.Model):
     image = models.ImageField(upload_to='media')
     name = models.CharField(max_length=50)
     description = models.CharField(max_length=100)
+    
+class Booking(models.Model):
+    customerName = models.CharField(max_length=50)
+    customerPhone = models.CharField(max_length=12)
+    #need name of the event
+    name = models.ForeignKey(Event, on_delete=models.CASCADE)
+    bookingDate = models.DateField()
+    bookedAt =  models.DateField(auto_now=True)
+    
