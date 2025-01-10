@@ -7,5 +7,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('eventapp.urls'))
-]+static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
+    path('', include('eventapp.urls')),
+    path('register/', include('userapp.urls'))
+    
+] + static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
