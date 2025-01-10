@@ -14,6 +14,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    {% block head %}
+        {% endblock %} 
+
     <style>
         .nav li a{
             color: red;
@@ -24,8 +28,11 @@
             font-size: 25px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
+        
     </style>
+   
 </head>
+
 <body>
     <!--Nav Bar-->
     <nav class="navbar navbar-inverse">
@@ -47,8 +54,9 @@
           </ul>
         </div>
       </nav>
-
-   {% block content %}   
+    
+   {% block content %}  
+   
    {% endblock %}
 </body>
 </html>
