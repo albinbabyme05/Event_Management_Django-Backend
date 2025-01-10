@@ -1,10 +1,14 @@
 
 {%extends 'base.html' %}
-
+{% load static %}
 {% block title %}
 Booking
+
 {% endblock%}
 
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/stylebooking.css' %}">
+{% endblock %}
 
 {% block content %}
 <h1 class="text-center">Book Your Events</h1>
