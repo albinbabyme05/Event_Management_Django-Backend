@@ -1,22 +1,4 @@
-# Event Management Django Application
 
-## Description
-
-This is a Django-based Event Management Application where users can register, log in, view events, and book events. The application utilizes a simple backend for user authentication, event management, and event bookings. The frontend leverages Bootstrap for styling to ensure responsiveness and modern design.
-
-## Features
-
-- **User Authentication**: Register, log in, and log out functionality.
-- **Event Listing**: Displaying events with images and descriptions.
-- **Booking System**: Allows users to book events based on availability.
-- **Bootstrap Integration**: User interface built with Bootstrap for responsiveness.
-
-## Prerequisites
-
-To run the application locally, you will need to have Python, Django, and other dependencies installed.
-
-### Requirements
-see requirement.txt file
 
 # Event Management Django Application
 
